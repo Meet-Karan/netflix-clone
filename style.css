@@ -1,0 +1,268 @@
+    *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    background-color: black;
+  
+}
+
+nav{
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img{
+    width: 150px;
+    color: red;     
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+     position: relative;
+    z-index: 10;
+}
+
+.hero{
+     font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.main-para{
+      font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.second-para{
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.third-para{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sepration{
+    height: 7px;
+    background-color: gray;
+}
+.btn{
+   padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.red-btn{
+    background-color: red;
+    
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+.hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input{
+    padding:  8px 105px 8px 14px;
+    z-index: 10;
+    position: relative;
+    font-size: 12px;
+    color: white;
+    border: 2px solid ;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+input::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+    .section {
+      padding: 0px 120px;
+    }
+
+    h2 {
+      margin: 25px 25px 25px 100px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      line-height: normal;
+      font-size: 24px;
+      color: white;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding-bottom: 10px;
+    }
+
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .movie {
+      position: relative;
+      flex: 0 0 auto;
+      width: 160px;
+      padding: 0px 10px ;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .movie img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .movie:hover {
+      transform: scale(1.1);
+    }
+
+    .number-label {
+        font-family:  sans-serif;
+      position: absolute;
+      left: -10%;
+      top: 60%;
+      -webkit-text-stroke-width: 1.2px; /* Sets the outline thickness */
+     -webkit-text-stroke-color: rgb(255, 255, 255);
+      transform: translateY(-30%) translateX(10%);
+      font-size: 100px;
+      font-weight: 700;
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      z-index: 20;
+    }
+
+
+
+    .box2{
+       background: linear-gradient(to bottom, #1b1f3f, #210f18);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      min-height: 250px;
+      box-shadow: 0 0 12px rgba(255, 0, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .box2:hover {
+      transform: translateY(-6px);
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .box-heading{
+         font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .box-para {
+      font-size: 1rem;
+      color: #e6dede;
+      line-height: 1.5;
+    }
+    
+    
+    @media (max-width: 600px) {
+      .h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }     
+      .box2 {
+        min-height: auto;
+      }
+    }
+
+.qusetion-container{
+
+}
+
+
+    .question{
+        font-family: sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 24px;
+        display: flex;
+        background-color:  #2d2d2d;
+        padding: 50px;
+        margin: 20px 0px;
+    }
+
+        @media (max-width: 600px) {
+      .movie {
+        width: 120px;
+      }
+      .number-label {
+        font-size: 40px;
+        left: -1px;  
+      }
+      .question{
+        font-weight: 400;
+        font-size: 18px;
+      
+        padding: 20px;
+        margin: 20px 0px;
+      }
+      .section{
+        padding: 30px;
+      }
+    }
